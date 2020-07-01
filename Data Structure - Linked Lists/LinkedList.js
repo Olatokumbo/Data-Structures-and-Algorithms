@@ -55,6 +55,31 @@ class LinkedList {
     this.length++;
     return this.printList();
   }
+  remove(index) {
+    if (index >= this.length) {
+      this.removeTail();
+    } else if (index <= 0) {
+      this.removeHead();
+    } else {
+      let leader = this.traverseToIndex(index - 1);
+      let unwantedNode = leader.next;
+      leader.next = unwantedNode.next;
+      this.length--;
+      return this.printList();
+    }
+  }
+  removeHead() {
+    let currentNode = this.head;
+    this.head = currentNode.next;
+    this.length--;
+    return this.printList();
+  }
+  removeTail() {
+    let leader = this.traverseToIndex(this.length - 2);
+    leader.next = null;
+    this.length--;
+    return this.printList();
+  }
   traverseToIndex(index) {
     let currentNode = this.head;
     let counter = 0;
@@ -67,8 +92,11 @@ class LinkedList {
 }
 
 const list = new LinkedList();
-list.append(1);
-list.append(2);
-list.append(3);
-list.prepend(0);
-list.insert(0, -1);
+list.append(1); //Inserts 1 to the end of the Linked List
+list.append(2); //Inserts 2 to the end  the Linked List
+list.append(3); //Inserts 3 to the start  the Linked List
+list.prepend(0); //Inserts 0 to the start  the Linked List
+list.insert(0, -1); //Inserts -1 to at index 0 of the the Linked List
+list.removeHead(); //Removes Head Node
+list.removeTail(); //Removes Tail Node
+list.remove(2); //Removes Node at index 2
