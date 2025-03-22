@@ -20,7 +20,7 @@ This repository contains implementations of various data structures and algorith
 
 ### Python
 - [ ] Arrays
-- [ ] Linked Lists
+- [x] Linked Lists
 - [ ] Stacks
 - [ ] Queues
 - [ ] Trees
@@ -30,9 +30,9 @@ This repository contains implementations of various data structures and algorith
 
 ### JavaScript
 - [ ] Arrays
-- [ ] Linked Lists
-- [ ] Stacks
-- [ ] Queues
+- [x] Linked Lists
+- [x] Stacks
+- [x] Queues
 - [ ] Trees
 - [ ] Graphs
 - [ ] Hash Tables
@@ -106,7 +106,3 @@ Feel free to contribute to this project by:
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-- Inspired by various computer science courses and textbooks
-- Special thanks to all contributors who will help improve this repository

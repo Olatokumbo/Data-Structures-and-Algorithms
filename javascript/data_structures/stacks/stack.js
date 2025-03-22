@@ -1,3 +1,9 @@
+/**
+ * Implementation of a Stack data structure (LIFO - Last In First Out).
+ * Operations include: push, pop, peek.
+ * Time Complexity: O(1) for all operations
+ */
+
 class Node {
   constructor(value) {
     this.value = value;
@@ -11,6 +17,7 @@ class Stack {
     this.bottom = null;
     this.length = 0;
   }
+
   printList() {
     let array = [];
     let currentNode = this.top;
@@ -20,9 +27,11 @@ class Stack {
     }
     return console.log(array);
   }
+
   peak() {
     return console.log(this.top.value);
   }
+
   push(value) {
     let newNode = new Node(value);
     if (this.length === 0) {
@@ -35,6 +44,7 @@ class Stack {
     this.length++;
     return this.printList();
   }
+
   pop() {
     if (!this.top) {
       return null;

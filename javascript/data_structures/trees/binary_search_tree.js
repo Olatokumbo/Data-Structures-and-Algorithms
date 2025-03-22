@@ -1,3 +1,9 @@
+/**
+ * Implementation of a Binary Search Tree data structure.
+ * Operations include: insert, lookup.
+ * Time Complexity: O(log n) average case, O(n) worst case
+ */
+
 class Node {
   constructor(value) {
     this.value = value;
@@ -5,11 +11,11 @@ class Node {
     this.right = null;
   }
 }
-
 class BinarySearchTree {
   constructor() {
     this.root = null;
   }
+
   insert(value) {
     let newNode = new Node(value);
     if (this.root === null) {
@@ -34,6 +40,7 @@ class BinarySearchTree {
       }
     }
   }
+
   lookup(value) {
     let currentNode = this.root;
     while (currentNode !== null) {
@@ -49,9 +56,9 @@ class BinarySearchTree {
   }
 }
 
-const Bst = new BinarySearchTree();
-Bst.insert(1); //Inserts 1 to the Tree
-Bst.insert(2); //Inserts 2 to the Tree
-Bst.insert(0); //Inserts 0 to the Tree
-Bst.insert(3); //Inserts 3 to the Tree
-Bst.lookup(2); //Searches for 2 in the Tree
+const bst = new BinarySearchTree();
+bst.insert(1); //Inserts 1 to the Tree
+bst.insert(2); //Inserts 2 to the Tree
+bst.insert(0); //Inserts 0 to the Tree
+bst.insert(3); //Inserts 3 to the Tree
+bst.lookup(2); //Searches for 2 in the Tree

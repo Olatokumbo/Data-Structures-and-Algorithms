@@ -1,13 +1,19 @@
-// Binary Heap
+/**
+ * Implementation of a Max Binary Heap data structure.
+ * Operations include: insert, extractMax.
+ * Time Complexity: O(log n) for insert and extractMax
+ */
 
 class BinaryHeap {
   constructor() {
     this.array = [41, 39, 33, 18, 27, 12];
   }
+
   insert(value) {
     this.array.push(value);
     this.bubbleUp();
   }
+
   bubbleUp() {
     let elementId = this.array.length - 1;
     let element = this.array[elementId];
@@ -21,6 +27,7 @@ class BinaryHeap {
     }
     return console.log(this.array);
   }
+
   extractMax() {
     let max = this.array[0];
     let end = this.array.pop();
@@ -30,6 +37,7 @@ class BinaryHeap {
     }
     return console.log(max);
   }
+
   sinkDown() {
     let elementId = 0;
     let length = this.array.length;

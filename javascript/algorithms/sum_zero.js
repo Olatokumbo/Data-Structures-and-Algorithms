@@ -1,3 +1,9 @@
+/**
+ * Implementation of a two-pointer algorithm to find a pair of numbers in a sorted array that sum to zero.
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
+
 const sumZero = (array) =>{
     var left = 0;
     var right = array.length-1;
@@ -15,4 +21,5 @@ const sumZero = (array) =>{
     }
 }
 
- sumZero([-2, 1, 0, 1, 2, 3])
+// Test case
+sumZero([-2, 1, 0, 1, 2, 3])

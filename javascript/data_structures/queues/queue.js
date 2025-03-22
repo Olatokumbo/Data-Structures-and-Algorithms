@@ -1,28 +1,36 @@
+/**
+ * Implementation of a Queue data structure (FIFO - First In First Out).
+ * Operations include: enqueue, dequeue, peek.
+ * Time Complexity: O(1) for all operations
+ */
+
 class Node {
     constructor(value){
         this.value=value;
         this.next = null;
     }
 }
-
 class Queue {
     constructor(){
         this.first = null;
         this.last = null;
         this.length=0;
     }
+
     printList() {
-    let array = [];
-    let currentNode = this.first;
-    while (currentNode !== null) {
-      array.push(currentNode.value);
-      currentNode = currentNode.next;
+        let array = [];
+        let currentNode = this.first;
+        while (currentNode !== null) {
+            array.push(currentNode.value);
+            currentNode = currentNode.next;
+        }
+        return console.log(array);
     }
-    return console.log(array);
-  }
+
     peak(){
         return console.log(this.first.value)
     }
+
     enqueue(value){
         let newNode = new Node(value);
         if(this.length===0){
@@ -36,6 +44,7 @@ class Queue {
         this.length++;
         return this.printList();
     }
+
     dequeue(){
         if(!this.first){
             return null

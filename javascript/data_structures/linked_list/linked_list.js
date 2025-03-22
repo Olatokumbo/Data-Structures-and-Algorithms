@@ -1,16 +1,22 @@
+/**
+ * Implementation of a singly linked list data structure with basic operations.
+ * Operations include: append, prepend, insert, remove, removeHead, removeTail.
+ * Time Complexity: O(n) for most operations except prepend/removeHead which are O(1)
+ */
+
 class Node {
   constructor(value) {
     this.value = value;
     this.next = null;
   }
 }
-
 class LinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
     this.length = 0;
   }
+
   printList() {
     let array = [];
     let currentNode = this.head;
@@ -20,6 +26,7 @@ class LinkedList {
     }
     return console.log(array);
   }
+
   append(value) {
     let newNode = new Node(value);
     if (this.length === 0) {
@@ -32,6 +39,7 @@ class LinkedList {
     this.length++;
     return this.printList();
   }
+
   prepend(value) {
     let newNode = new Node(value);
     let temp = this.head;
@@ -40,6 +48,7 @@ class LinkedList {
     this.length++;
     return this.printList();
   }
+
   insert(index, value) {
     let newNode = new Node(value);
     if (index >= this.length) {
@@ -55,6 +64,7 @@ class LinkedList {
     this.length++;
     return this.printList();
   }
+
   remove(index) {
     if (index >= this.length) {
       this.removeTail();
@@ -68,18 +78,21 @@ class LinkedList {
       return this.printList();
     }
   }
+
   removeHead() {
     let currentNode = this.head;
     this.head = currentNode.next;
     this.length--;
     return this.printList();
   }
+
   removeTail() {
     let leader = this.traverseToIndex(this.length - 2);
     leader.next = null;
     this.length--;
     return this.printList();
   }
+
   traverseToIndex(index) {
     let currentNode = this.head;
     let counter = 0;
