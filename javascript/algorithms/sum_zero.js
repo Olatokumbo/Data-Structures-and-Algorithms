@@ -4,7 +4,7 @@
  * Space Complexity: O(1)
  */
 
-const sumZero = (array) =>{
+const sumZero = (array) => {
     var left = 0;
     var right = array.length-1;
     while(left<right){

@@ -3,8 +3,7 @@
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  */
-
-const uniqueValue = (array) =>{
+const uniqueValue = (array) => {
     var left = 0;
     var right = 1;
     var counter = 0;

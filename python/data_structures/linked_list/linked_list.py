@@ -1,3 +1,8 @@
+"""
+Implementation of a singly linked list data structure with basic operations.
+Operations include: append, prepend, insert, remove, removeHead, removeTail.
+Time Complexity: O(n) for most operations except prepend/removeHead which are O(1)
+"""
 
 class Node:
     def __init__(self, value):
