@@ -21,8 +21,8 @@ This repository contains implementations of various data structures and algorith
 ### Python
 - [ ] Arrays
 - [x] Linked Lists
-- [ ] Stacks
-- [ ] Queues
+- [x] Stacks
+- [x] Queues
 - [ ] Trees
 - [ ] Graphs
 - [ ] Hash Tables
