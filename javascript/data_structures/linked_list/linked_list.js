@@ -1,7 +1,48 @@
 /**
- * Implementation of a singly linked list data structure with basic operations.
- * Operations include: append, prepend, insert, remove, removeHead, removeTail.
- * Time Complexity: O(n) for most operations except prepend/removeHead which are O(1)
+ * Singly Linked List Data Structure Implementation
+ * 
+ * A Linked List is a linear data structure where elements are stored in nodes, and each node points to the next node in the sequence.
+ * Unlike arrays, linked lists are not stored in contiguous memory locations.
+ * 
+ * Key characteristics:
+ * - Dynamic size
+ * - Non-contiguous memory allocation
+ * - Sequential access only
+ * - No random access to elements
+ * - Memory efficient for dynamic data
+ * - Easy insertion and deletion
+ * 
+ * Common use cases:
+ * - Dynamic memory allocation
+ * - Implementation of stacks and queues
+ * - Browser history navigation
+ * - Text editor undo/redo functionality
+ * - Memory management in operating systems
+ * - Implementation of adjacency lists for graphs
+ * 
+ * Operations:
+ * - append: Add an element at the end
+ * - prepend: Add an element at the beginning
+ * - insert: Add an element at a specific position
+ * - remove: Remove an element from a specific position
+ * - removeHead: Remove the first element
+ * - removeTail: Remove the last element
+ * - traverseToIndex: Access an element at a specific position
+ * 
+ * Time Complexity:
+ * - Append: O(1)
+ * - Prepend: O(1)
+ * - Insert: O(n)
+ * - Remove: O(n)
+ * - RemoveHead: O(1)
+ * - RemoveTail: O(n)
+ * - Access by index: O(n)
+ * - Search: O(n)
+ * 
+ * Space Complexity: O(n) where n is the number of elements in the list
+ * 
+ * Note: This implementation maintains references to both head and tail nodes
+ * for efficient append and prepend operations.
  */
 
 class Node {

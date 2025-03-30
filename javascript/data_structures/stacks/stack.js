@@ -1,7 +1,39 @@
 /**
- * Implementation of a Stack data structure (LIFO - Last In First Out).
- * Operations include: push, pop, peek.
- * Time Complexity: O(1) for all operations
+ * Stack Data Structure Implementation
+ * 
+ * A Stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+ * The last element added to the stack will be the first one to be removed.
+ * 
+ * Key characteristics:
+ * - LIFO (Last-In-First-Out) principle
+ * - Dynamic size
+ * - Single-ended operations (top only)
+ * - No random access to elements
+ * - Memory efficient
+ * - Fast operations
+ * 
+ * Common use cases:
+ * - Function call stack in programming languages
+ * - Undo/Redo operations in text editors
+ * - Backtracking algorithms
+ * - Expression evaluation and syntax parsing
+ * - Browser history navigation
+ * - Memory management
+ * 
+ * Operations:
+ * - push: Add an element to the top of the stack
+ * - pop: Remove and return the top element
+ * - peek: View the top element without removing it
+ * 
+ * Time Complexity:
+ * - Push: O(1)
+ * - Pop: O(1)
+ * - Peek: O(1)
+ * 
+ * Space Complexity: O(n) where n is the number of elements
+ * 
+ * Note: This implementation uses a linked list structure where each node
+ * contains a value and a reference to the next node in the stack.
  */
 
 class Node {
@@ -28,7 +60,7 @@ class Stack {
     return console.log(array);
   }
 
-  peak() {
+  peek() {
     return console.log(this.top.value);
   }
 
@@ -65,4 +97,4 @@ stack.push("instagram"); //Inserts instagram to the Stack
 stack.push("discord"); //Inserts discord to the Stack
 stack.push("twitter"); //Inserts twitter to the Stack
 stack.pop(); //Removes the top Node
-stack.peak(); //Displays the top Node
+stack.peek(); //Displays the top Node

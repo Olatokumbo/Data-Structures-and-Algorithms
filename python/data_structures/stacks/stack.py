@@ -1,7 +1,37 @@
 """
-Implementation of a Stack data structure with basic operations.
-Operations include: push, pop, peek
-Time Complexity: O(1) for all operations
+Stack Data Structure Implementation
+
+A Stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+The last element added to the stack will be the first one to be removed.
+
+Key characteristics:
+- LIFO (Last-In-First-Out) principle
+- Dynamic size
+- Single-ended operations (top only)
+- No random access to elements
+
+Common use cases:
+- Function call stack in programming languages
+- Undo/Redo operations in text editors
+- Backtracking algorithms
+- Expression evaluation and syntax parsing
+- Browser history navigation
+
+Operations:
+- push: Add an element to the top of the stack
+- pop: Remove and return the top element
+- peek: View the top element without removing it
+- isEmpty: Check if the stack is empty
+- size: Get the number of elements in the stack
+
+Time Complexity:
+- Push: O(1)
+- Pop: O(1)
+- Peek: O(1)
+- isEmpty: O(1)
+- size: O(1)
+
+Space Complexity: O(n) where n is the number of elements in the stack
 """
 
 class Node:

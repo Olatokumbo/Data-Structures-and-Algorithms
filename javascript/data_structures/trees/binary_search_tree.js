@@ -1,7 +1,42 @@
 /**
- * Implementation of a Binary Search Tree data structure.
- * Operations include: insert, lookup.
- * Time Complexity: O(log n) average case, O(n) worst case
+ * Binary Search Tree (BST) Data Structure Implementation
+ * 
+ * A Binary Search Tree is a node-based binary tree data structure that has the following properties:
+ * - The left subtree of a node contains only nodes with keys less than the node's key
+ * - The right subtree of a node contains only nodes with keys greater than the node's key
+ * - Both the left and right subtrees must also be binary search trees
+ * 
+ * Key characteristics:
+ * - Hierarchical structure
+ * - Ordered data storage
+ * - No duplicate values
+ * - Efficient search operations
+ * - Dynamic size
+ * 
+ * Common use cases:
+ * - Database indexing
+ * - File system organization
+ * - Network routing tables
+ * - Symbol tables in compilers
+ * - Game state management
+ * - Decision trees in AI/ML
+ * 
+ * Operations:
+ * - insert: Add a new node with a value
+ * - lookup: Find a node with a specific value
+ * - remove: Delete a node with a specific value
+ * - traverse: Visit all nodes in a specific order
+ * 
+ * Time Complexity:
+ * - Insert: O(log n) average, O(n) worst
+ * - Lookup: O(log n) average, O(n) worst
+ * - Remove: O(log n) average, O(n) worst
+ * - Traverse: O(n)
+ * 
+ * Space Complexity: O(n) where n is the number of nodes
+ * 
+ * Note: The performance of BST operations depends on the tree's balance.
+ * In worst case (skewed tree), operations can degrade to O(n).
  */
 
 class Node {
