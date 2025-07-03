@@ -1,4 +1,4 @@
-# Title: 724. Is Subsequence
+# Title: 724. Find Pivot Index
 # Difficulty: Easy
 
 # Given an array of integers nums, calculate the pivot index of this array.
