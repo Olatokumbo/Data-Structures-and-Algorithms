@@ -39,3 +39,19 @@ class Solution:
                 hashMap[num] = hashMap.get(num, 0)+1
 
         return operations
+    
+class Solution:
+    def equalPairs(self, grid: List[List[int]]) -> int:
+        hash_map = {}
+        pairs = 0
+
+        for row in grid:
+            number = tuple(row)
+            hash_map[number] = hash_map.get(number, 0)+1
+
+        for col in range(len(grid)):
+            column = tuple(grid[r][col] for r in range(len(grid)))
+            if column in hash_map:
+                pairs+=hash_map[column]
+
+        return pairs
